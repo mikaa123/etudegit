@@ -103,6 +103,7 @@ Git solutions
 
 [Not elligible]
 # Gitolite
+* Authorization layer
 * Git repository hosting on a centralized server.
 * Browsable using gitweb.
 * Used to be a part of gitlab.
@@ -116,8 +117,11 @@ Git solutions
 
 # Gitblit
 * Full java stack.
-* No issue tracker.
-* Not yet, but comming.
+* No issue tracker yet.
 
 # Gitorious
+* Free software
+* Issue tracker, but not as complete as Gitlab
+* Wiki
+* Not as maintained as Gitlab
 
