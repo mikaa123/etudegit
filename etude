@@ -45,11 +45,11 @@ How Git can bring us a better separation of concern
 ## What is wrong with the current approach (SVN)
 * Centralized repository. All the projects live there.
 * Touching the history of a file impacts the whole structure.
-* Introducing an error somewhere impacts everybody.
-* Since there's only a single repository, it's easier to maintain a common process for
-  dependency managment or building.
-* This process is dictated by the most used technology for convinience. Maven is great for Java projects,
-  but front-end projects shouldn't use it. But having multiple build tools in the same project is headache-prone: no win here.
+* ? Introducing an error somewhere impacts everybody.
+* = Since there's only a single repository, it's easier (with git) to maintain a common process for
+  dependency managment or building. 
+	- This process is dictated by the most used technology for convinience. Maven is great for Java projects,
+  	but front-end projects shouldn't use it. But having multiple build tools in the same project is headache-prone: no win here.
 
 ## Yet this approach works and is well integrated with our tools. However:
 * Commiting is a big deal: Code reviews are required (and they aren't error-proof)
@@ -65,14 +65,10 @@ How Git can bring us a better separation of concern
   - Correct some CSS here and there.
   Result? The whole application crashes on IE7 because of a forgotten comma, with no way to target what was the cause.
 
-## So what now?
-* We keep it like this for Java projects
-* For generic, stand-alone, or front-end oriented projects, we try something now.
-
 ## Which benefits brings git out of the box
-* When working on long tasks, you don't need to (and shouldn't) commit only once.
-* You can commit as much as you want.
-* It's great because it prevents you from sending unfinished work
+* When working on long tasks, you don't need to (and shouldn't) commit only once. Commit few, commit often.
+* You can commit as much as you want locally, then prepare a commit for upstream.
+* It's great because it prevents you from sending unfinished work [introduire les branches]
 * ...that can lead to weird/unexpected errors for the rest of us.
 
 ## Git, Gitlab over Svn and Jira
@@ -101,12 +97,11 @@ Git solutions
       * à la Github.
       * Hosted.
 
-[Not elligible]
-# Gitolite
-* Authorization layer
-* Git repository hosting on a centralized server.
-* Browsable using gitweb.
-* Used to be a part of gitlab.
+			# Gitolite
+			* Authorization layer
+			* Git repository hosting on a centralized server.
+			* Browsable using gitweb.
+			* Used to be a part of gitlab.
 
 # Gitlab
 * Github like. MIT.
