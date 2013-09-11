@@ -1,3 +1,12 @@
+Plan des presentations
+======================
+* Git vs SVN => Utiliser cas d'étude (ex. Migration option de mémo)
+* Git workflows
+	- (git-scm)[http://git-scm.com/book/en/Distributed-Git-Distributed-Workflows] 
+	- (git-flow)[http://nvie.com/posts/a-successful-git-branching-model/]
+	- (twgit)[https://github.com/Twenga/twgit/wiki]
+* Tools around git/process
+
 Gestion des projets transverses
 ===============================
 
